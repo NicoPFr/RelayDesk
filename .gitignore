@@ -1,0 +1,21 @@
+# macOS metadata
+.DS_Store
+
+# Application packages and build output do not belong in this documentation repository.
+*.dmg
+*.pkg
+*.app/
+*.zip
+*.tar
+*.tar.gz
+build/
+dist/
+
+# Local credentials and signing material
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.mobileprovision
