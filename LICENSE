@@ -1,0 +1,62 @@
+RelayDesk — Proprietary License
+
+Copyright © 2026 Nicolas Peeters
+All rights reserved.
+
+1. Ownership and scope
+
+RelayDesk is proprietary software owned by Nicolas Peeters. This notice applies
+to RelayDesk and to the original documentation and media published by the author
+in this repository. Application source code is not distributed here. Materials
+identified as belonging to third parties remain subject to their own terms.
+
+2. Permission to use
+
+The author grants you a limited, non-exclusive, non-transferable permission to
+install and use an authorized compiled copy of RelayDesk, free of charge, for
+personal or professional purposes. You may make the copies reasonably necessary
+for that installation, use, and backup, provided you retain the copyright and
+proprietary notices. This permission does not transfer ownership of the software
+or promise future versions, updates, or support.
+
+The public repository provides product information and release materials; it
+does not distribute application source code. The permission above applies when
+you lawfully obtain an authorized compiled copy of the application. It does not
+authorize obtaining or using unpublished source code or other non-public materials.
+
+3. Restrictions
+
+Except as expressly permitted above, separately authorized in writing by the
+author, or permitted by applicable law, you may not:
+
+- Copy, publish, distribute, redistribute, sublicense, rent, or resell RelayDesk
+  or the original materials covered by this notice.
+- Modify, adapt, translate, or create derivative works from RelayDesk or those
+  materials.
+- Sell or otherwise commercially distribute a modified or derivative version.
+- Remove or alter copyright, trademark, or other proprietary notices.
+
+Normal viewing of this public repository, sharing links to it, and technical
+copies needed for those activities are permitted. Rights required by GitHub's
+applicable platform terms are not restricted by this notice.
+
+4. Name and brand
+
+The RelayDesk name, logos, and other brand elements remain the author's property
+to the extent protected by applicable law. No permission to adopt them for your
+own product, imply endorsement, or present a derivative as an official RelayDesk
+product is granted. Truthful references to RelayDesk and uses permitted by law
+remain allowed. This notice does not claim that any mark is registered.
+
+5. Rights preserved by law
+
+Nothing in this notice excludes or limits rights, exceptions, or limitations
+that cannot lawfully be excluded or restricted. These may include statutory
+rights concerning software use, backup, observation, study, testing,
+interoperability, or other permitted uses, where applicable.
+
+6. Additional permissions
+
+Permission for uses beyond those stated here must be obtained from Nicolas
+Peeters. Public inquiries may be directed to the official repository:
+https://github.com/NicoPFr/RelayDesk/issues

@@ -1,27 +1,25 @@
-# Releases and release notes
+# Release status
 
 [← Documentation](README.md)
 
-**No public release has been published.** This page prepares the documentation for future releases; it does not provide an application download.
+**The first public release is being prepared. There is no application download yet.**
 
-GitHub Releases will be the official publication channel for the signed macOS application. Each published version will have its own release notes, forming the public changelog. Internal development versions are not public releases and will not be listed as downloadable versions.
+[GitHub Releases](https://github.com/NicoPFr/RelayDesk/releases) will be the official download channel and the public changelog. Each release will include installation instructions, known limitations, and a SHA-256 checksum for its DMG.
 
-## Information for each future release
+## First candidate: 2.11.0
 
-Release notes should include:
+The candidate brings together local terminals, SSH, SFTP/SCP, tabs and split views, host organization, saved workspaces, and command tools in a universal macOS application for Apple Silicon and Intel.
 
-- The actual version and publication date.
-- A short overview of the release, followed by user-visible improvements and fixes.
-- Known issues and limitations, including language coverage where relevant.
-- Supported macOS versions and processor architectures, verified for that release.
-- Installation or update instructions and any migration steps users need to take.
-- Signing and notarization status, verified for the exact application being published.
-- A link to GitHub Issues for feedback.
+The application and DMG have been built. Package inspection and automated tests have been performed; a clean first launch, representative native workflows, and relaunch still need verification in an independent macOS environment. Real product screenshots will be captured there using sample data. The candidate will be published only after that qualification.
 
-Only describe changes included in that version. Keep planned features in the public roadmap, and keep internal implementation details out of release notes.
+## Distribution details
 
-## Before the first publication
+- The package targets macOS 12 or later. Compatibility testing across macOS versions and Intel hardware is still pending.
+- The first release uses an **ad-hoc signature**, with **no Developer ID signing and no notarization**. macOS may block its first launch. See the [installation guide](installation.md).
+- The interface is primarily in French.
+- A public update channel is not configured; downloads will use GitHub Releases.
+- Hardware PKCS#11 authentication and advanced tmux/TUI workflows need further field qualification.
 
-Verify the installation and first-launch journey on the stated supported systems. Publish the corresponding user guides, review the notes against the application, and confirm that any screenshots show the real interface without sensitive data.
+Developer ID signing and notarization are future distribution improvements. The remaining first-release qualification concerns the installed application's behavior and a clean first-run experience.
 
-Binary distribution remains a separate, later step. This repository initialization does not create a release, upload an installer, or configure a distribution workflow.
+Follow [release preparation](https://github.com/NicoPFr/RelayDesk/issues/2) for public progress. Published release notes will describe changes actually included in each version, separately from the roadmap.
