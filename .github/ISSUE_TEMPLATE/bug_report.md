@@ -8,8 +8,7 @@ assignees: ""
 
 <!-- English and French are welcome. Search existing issues first.
 Issues are public: remove credentials, private hostnames, and sensitive data.
-Public downloads are not available yet. If reporting from an existing build,
-include its version; do not attach the application or an installer. -->
+Include the version from About RelayDesk; do not attach the application or an installer. -->
 
 ## What happened?
 

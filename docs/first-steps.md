@@ -2,7 +2,7 @@
 
 [← Documentation](README.md)
 
-These workflows describe the current application. Public distribution and the complete clean-install qualification are still pending. Interface labels below match the current French interface.
+These workflows describe RelayDesk 2.11.0. Start with the [installation guide](installation.md). Interface labels below match the current French interface.
 
 ## Open a local terminal
 

@@ -1,20 +1,26 @@
-# Application screenshots
+# Product screenshots to provide
 
-No publishable screenshots have been added yet. Capture is paused while the shared macOS desktop is in use. Resume only in an idle session with the user's agreement, or on a separate Mac. Do not activate, resize, close, or send input to the user's working sessions.
+No usable application screenshots were found in either repository or their available Git history. Existing images are branding assets only. Do not use browser test fixtures or mockups as product screenshots.
 
-## Capture plan
+## Three priority captures from the Mac
 
-Use the real RelayDesk application with isolated demo profiles and a real SSH/SFTP connection containing only sample files. Keep the same appearance, window size, and readable terminal font across the set.
+| File | What to show | Proposed README caption |
+| --- | --- | --- |
+| `relaydesk-overview.png` | The full RelayDesk window, connection sidebar, several tabs, and a named workspace. Use sample host profiles only. | Your connections, sessions, and workspace in one macOS window. |
+| `relaydesk-split-view.png` | Two or three actual terminals side by side: one local shell and real SSH sessions to a demo environment. Keep tabs and workspace controls visible. | Keep local tools and remote sessions side by side. |
+| `relaydesk-sftp.png` | A connected demo SSH terminal beside the real SFTP browser, with harmless sample files and a completed sample transfer. | Work with remote files without leaving the active session. |
 
-| File | What it should show |
-| --- | --- |
-| `relaydesk-overview.png` | The macOS app window, organized hosts, terminal, and remote files in one view. |
-| `relaydesk-terminal.png` | A local shell running a real, readable command. |
-| `relaydesk-ssh.png` | Connected demo SSH sessions in tabs or a split view. |
-| `relaydesk-sftp.png` | A remote directory and a completed transfer of a sample file. |
+Optional fourth image: a real tmux layout, saved-workspace selector, or terminal-trigger editor if it adds something clearly visible and representative. Do not create a screenshot simply to complete a feature list.
 
-Capture at native display resolution, at least 1600 pixels wide where the environment supports it. Keep the full application window and exclude unrelated applications. Review every image at full size for credentials, real hostnames, private paths, notifications, and unrelated files.
+## Capture quality
 
-Do not reconstruct the interface, alter application output, or use mocked browser tests as product screenshots. Cropping surrounding desktop space and resizing for delivery must not change what the application shows.
+- Use the real 2.11.0 application on your Mac. Capture the application window at its native Retina resolution, ideally at least 2000 pixels wide; do not upscale.
+- Keep the same appearance, window proportions, and readable terminal font across images.
+- Use demonstration hosts and sample files only. Real SSH/SFTP operations must run against a demo environment; never stage fake output.
+- Avoid menus or tooltips covering the workspace, unrelated windows, notifications, and the desktop.
+- Check the sidebar, tab titles, prompt, paths, history, terminal output, and transfer list for personal or work data. Do not include passwords, keys, tokens, production hosts, or private usernames.
+- Supply the three original PNGs with a short description of the workflow and confirmation that they show demonstration data. They can then be reviewed and embedded without inventing any content.
 
-After review, embed the overview below the README hero and use the detail views beside their workflow descriptions. Add accurate alt text and captions stating the application language and that the environment uses demonstration data.
+## Integration
+
+Use the overview below the README hero, followed by split-view and SFTP captures beside their corresponding workflow sections. The current screenshot notice must be removed only when the real files exist. Use meaningful alt text and the captions above. A social-preview revision can incorporate the approved overview later.

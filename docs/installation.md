@@ -2,32 +2,35 @@
 
 [← Documentation](README.md)
 
-**The first public release is still being qualified. There is no public DMG download yet.** This guide describes the intended installation journey; the complete first-launch test remains pending in an isolated macOS environment.
+## Download
 
-## Requirements
+[Download for macOS](https://github.com/NicoPFr/RelayDesk/releases/latest/download/RelayDesk.dmg) · [Latest release notes and checksum](https://github.com/NicoPFr/RelayDesk/releases/latest)
 
-The universal candidate targets macOS 12 or later, with Apple Silicon and Intel executables. A deployment target is not a claim that every supported OS version or Mac has been tested. The release notes will state the actual qualification coverage.
+The download link follows the latest public release. For a specific version, use its release page: [RelayDesk 2.11.0](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.0). The DMG is a Release Asset; GitHub's repository ZIP is documentation, not the app.
 
-SSH and file transfers use the system's OpenSSH tools. A remote account and access to the corresponding server are needed for SSH/SFTP. Core terminal and SSH workflows do not require a cloud account. The main application interface is currently in French.
+## Requirements and validation coverage
 
-## When the release is available
+RelayDesk 2.11.0 contains Apple Silicon and Intel executables and targets macOS 12 or later. This deployment target does not mean every OS version or processor has been tested. The maintainer personally confirmed that this exact DMG launches and works on macOS. The exact OS version and processor for that check were not recorded; a separate fresh-user installation, persistence/relaunch matrix, and broad compatibility testing have not been independently verified.
 
-1. Visit the official [GitHub Releases](https://github.com/NicoPFr/RelayDesk/releases) page.
-2. Read the version's known limitations and download its RelayDesk DMG. The repository's ZIP archive is documentation, not the application.
-3. Compare the downloaded file's SHA-256 with the checksum in those release notes, if you want to verify that the download matches the published file.
-4. Open the DMG and drag **RelayDesk** to **Applications**.
-5. Open RelayDesk from Applications and follow macOS's security guidance.
+The main interface is currently primarily in French. SSH/SFTP requires access to a server and the authentication appropriate to that server. Core local terminal and SSH workflows do not require a cloud account.
+
+## Install
+
+1. Download **RelayDesk.dmg** from the official GitHub Release.
+2. Compare its checksum with the SHA-256 in the release notes. In Terminal, run `shasum -a 256` followed by the downloaded file's path.
+3. Open the DMG and drag **RelayDesk** to **Applications**.
+4. Open RelayDesk from Applications and follow macOS's security guidance.
 
 ## Signing and macOS security
 
-The first release is planned without Developer ID signing and without notarization. It may carry an ad-hoc signature for bundle integrity; that is not an Apple-issued developer identity or an Apple malware review.
+This release has an ad-hoc signature, **without Developer ID signing and without notarization**. That signature checks bundle integrity; it is not an Apple-issued developer identity or an Apple malware review.
 
-macOS may warn that the developer cannot be verified or that Apple cannot check the app for malicious software, and may prevent it from opening. Behavior can also depend on device-management policies. Read [Apple's guidance on safely opening apps](https://support.apple.com/102445). Do not disable system protections or remove quarantine metadata to follow this guide.
+macOS may warn that the developer cannot be verified or that Apple cannot check the app for malicious software, and may prevent it from opening. Device-management policies may also block launch. Read [Apple's guidance on safely opening apps](https://support.apple.com/102445). This guide does not require disabling protections or removing quarantine metadata.
 
-If macOS prevents launch, report the exact message and your macOS version through [GitHub Issues](https://github.com/NicoPFr/RelayDesk/issues/new?template=installation_problem.md). Avoid repeated launch attempts or changes to security settings just to make the application run.
+If launch is blocked, report the exact message and your macOS version using the [installation problem template](https://github.com/NicoPFr/RelayDesk/issues/new?template=installation_problem.md).
 
 ## First launch and updates
 
-A fresh user environment should not inherit the developer's hosts, sessions, or workspaces. RelayDesk can discover your own existing OpenSSH configuration on your Mac; those are your connections, not bundled sample or developer data.
+The package contains no developer connection profiles or saved user state. RelayDesk can discover your own OpenSSH configuration; those connections are read from your Mac. See [local data and privacy](privacy.md) before sharing logs or changing application data.
 
-A public update channel is not configured for this candidate. Check the GitHub Releases page for future versions. No automatic-update guarantee is made.
+A public in-app update channel is not configured. Use GitHub Releases for future versions and read each version's notes before updating.

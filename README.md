@@ -1,114 +1,129 @@
 <p align="center">
-  <img src="assets/brand/relaydesk-icon.png" alt="RelayDesk app icon" width="96" height="96">
+  <img src="assets/brand/relaydesk-social-preview.png" alt="RelayDesk — Your terminal. Your servers. One workspace. Product branding with the RelayDesk app icon." width="100%">
 </p>
 
 # RelayDesk
 
 **A native macOS terminal and SSH client — fast, elegant, and built for a modern developer workflow.**
 
-Local terminals, remote servers, and files. One place to work.
+Unix depth. A workspace that feels at home on your Mac.
 
-**macOS · Free to use · Proprietary software**
+RelayDesk brings local shells, remote sessions, and file transfers together for developers and system administrators who work across several hosts every day.
 
-[Explore the features](#features) · [Download status](#download) · [Documentation](docs/README.md) · [Get help](#support)
+**macOS-first · Local-first · Free to use · Proprietary software**
 
-<!-- HERO: Embed assets/screenshots/relaydesk-overview.png only after an authentic,
-privacy-reviewed application capture has been added. Do not use a mock interface. -->
+[![Latest release](https://img.shields.io/github/v/release/NicoPFr/RelayDesk?label=release&color=497fb5)](https://github.com/NicoPFr/RelayDesk/releases/latest) ![macOS 12 or later](https://img.shields.io/badge/macOS-12%2B-283b51) ![Apple Silicon and Intel](https://img.shields.io/badge/architecture-Universal-283b51)
 
-## Keep your work in context
+### [↓ Download for macOS](https://github.com/NicoPFr/RelayDesk/releases/latest/download/RelayDesk.dmg)
 
-Connect to a server, inspect a file, run a command, and move to the next session. RelayDesk keeps the terminal and remote files together so you can spend less time switching between tools.
+**RelayDesk 2.11.0** · Universal: Apple Silicon + Intel · Targets macOS 12+
 
-It is built for developers, system administrators, and anyone who works with several SSH hosts from a Mac. Familiar shortcuts, Finder drag and drop, and an interface that follows the system appearance make the workspace feel at home on macOS.
+[Release notes & checksum](https://github.com/NicoPFr/RelayDesk/releases/latest) · [Installation](docs/installation.md) · [Get help](#support)
 
-This repository is RelayDesk's official home for product information, documentation, feedback, and future releases. Application source code is not distributed here.
+> This release has an ad-hoc signature, **without Developer ID signing or notarization**. macOS may prevent it from opening. Read the [compatibility and security notes](docs/installation.md) before installing.
 
-## Features
+## Several systems. One place to work.
 
-The following capabilities exist in the current application. **Public downloads are not available yet.**
+A local shell for your tools. An SSH session for the server. Remote files beside the command you are running. RelayDesk keeps these parts of the job in the same workspace, with tabs and splits when one terminal is no longer enough.
 
-| | Your workflow |
-| --- | --- |
-| **Terminal, local or remote** | Open a shell on your Mac or connect over SSH using your OpenSSH configuration, keys, and agent. Search terminal output and adjust its font and theme. |
-| **Room for multiple sessions** | Work in tabs or split views. Name and organize sessions, then save a workspace to return to it later. |
-| **Files beside the terminal** | Browse remote files over SFTP, upload and download with SFTP or SCP, follow queued transfers, and open remote files in an external editor. |
-| **Connections in order** | Group hosts into folders, mark favorites, and search your connections. |
-| **Fewer repeated steps** | Find actions in the command palette, reuse saved commands and session history, and send input to explicitly selected sessions. |
+It is designed for sustained multi-host work: keeping related sessions together, moving between command output and files, and returning to a named workspace without rebuilding your layout from scratch.
 
-### A few principles behind the product
+## Inside RelayDesk
 
-**The terminal comes first.** Give active sessions room to breathe; keep secondary controls close when you need them.
+**Real application screenshots are coming next.** The image above is product branding, not a screenshot. Native captures of the workspace, split terminals, and SFTP workflow have not been published yet.
 
-**Your existing SSH setup belongs here.** Work with the configuration and identities you already use. Core terminal and SSH workflows do not require a cloud account.
+<!-- Replace this notice with the reviewed overview capture. Follow it with
+split-view and SFTP images and the captions in assets/screenshots/README.md.
+Embed only files that exist; never substitute mockups or browser test fixtures. -->
 
-**Control stays with you.** Choose the targets for shared input, review sensitive pastes, and keep remote files attached to the session you are working in.
+[Capture checklist](assets/screenshots/README.md)
 
-## See RelayDesk in action
+## Built around the way you work
 
-Authentic application screenshots are being prepared. They will show the current interface and real terminal and file operations using non-sensitive sample data.
+### Keep the terminal at the center
 
-<!-- DEMO: Once reviewed, embed the real GIF here and link the MP4 and transcript.
-Media preparation and publication criteria: assets/demo/README.md. -->
+Open a local shell or connect over SSH. Search output, choose a font and theme, and arrange sessions in tabs or split views. Keep a local tool beside a remote command instead of losing the relationship between them.
 
-## Download
+### Keep remote files beside the terminal
 
-**The first public release is coming soon.**
+Browse remote directories over SFTP alongside the active SSH session. Upload and download with SFTP or SCP, follow queued transfers, and open remote files in an external editor. Finder drag and drop connects that workflow with the rest of your Mac.
 
-RelayDesk will be distributed through [GitHub Releases](https://github.com/NicoPFr/RelayDesk/releases). The first release candidate is being qualified; there is no public application download yet.
+### Make a host list into a workspace
 
-The first release is planned **without Developer ID signing and without notarization**. An ad-hoc signature does not identify the developer to Apple, and macOS may block the first launch. See the [installation guide](docs/installation.md) for the intended download path and security information.
+Group connections into folders, mark favorites, and search hosts. Name sessions and save workspaces for the environments you return to. A command palette, saved commands, and command history keep everyday actions within reach.
 
-GitHub's **Code → Download ZIP** downloads this documentation repository, not the application.
+### Stay deliberate across multiple hosts
 
-## Requirements and current limitations
+Shared input targets the sessions you explicitly select. Sensitive-paste review helps you inspect commands before sending them. Existing OpenSSH configuration, keys, and agents fit into the workflow rather than requiring a separate cloud account.
 
-- **macOS:** the universal release candidate targets macOS 12 or later on Apple Silicon and Intel. Compatibility qualification is still in progress.
-- **Language:** the main interface is currently in French; broader localization is planned.
-- **Distribution:** Developer ID signing and notarization are deferred. A public update channel is not configured.
-- **Advanced environments:** hardware PKCS#11 tokens and complex tmux/TUI workflows still need further field qualification.
+## From development to remote administration
 
-## Documentation
+- **Develop across local and remote systems.** Keep your local tools open while inspecting a remote service and its files.
+- **Operate several environments.** Put related hosts side by side, organize them by workspace, and choose shared-input targets intentionally.
+- **Maintain files without losing context.** Move from the terminal to SFTP, edit a remote file, and return to the same session.
 
-[Installation](docs/installation.md) · [First steps](docs/first-steps.md) · [Local data and privacy](docs/privacy.md) · [Release status](docs/releases.md)
+## Unix tools, Mac conventions
 
-The [documentation overview](docs/README.md) is the starting point for using RelayDesk and reporting a problem.
+RelayDesk keeps the depth of SSH and shell workflows while making room for familiar Mac interactions: native menus, keyboard shortcuts, system appearance, and Finder integration. The goal is less interface friction during intensive work, with the terminal always central.
 
-## Roadmap
+The current application also includes tmux integration, SSH routing and tunnels, terminal triggers, and optional PKCS#11 authentication. Advanced tmux/TUI workflows and hardware tokens still need broader field qualification; they are not requirements for ordinary local terminal or SSH use.
 
-| Stage | Focus |
-| --- | --- |
-| **Available** | Local terminals, SSH, SFTP/SCP, tabs and splits, host organization, saved workspaces, and everyday command tools in the current application. |
-| **In development** | Qualification of the first universal macOS release, installation journey, and real product media. |
-| **Planned** | Developer ID signing and notarization, and broader interface localization. |
-| **Future** | Terminal folding and outlining to make long output easier to navigate. |
+## Download and install
 
-These are directions, without fixed dates. Planned features are not promises for the first public release.
+1. [Download RelayDesk for macOS](https://github.com/NicoPFr/RelayDesk/releases/latest/download/RelayDesk.dmg).
+2. Open the DMG and drag **RelayDesk** to **Applications**.
+3. Open RelayDesk and follow macOS's security guidance.
+
+The DMG contains both Apple Silicon and Intel executables and targets macOS 12 or later. The maintainer has confirmed a successful launch on macOS; every OS version and hardware combination has not been tested. The interface is currently primarily in French.
+
+**No Developer ID signature or notarization is included.** macOS may block launch, including on managed Macs. See the [installation guide](docs/installation.md) for details and the [release notes](https://github.com/NicoPFr/RelayDesk/releases/latest) for known limitations and the SHA-256 checksum.
+
+[Download 2.11.0 specifically](https://github.com/NicoPFr/RelayDesk/releases/download/v2.11.0/RelayDesk.dmg) · [All releases](https://github.com/NicoPFr/RelayDesk/releases)
+
+The download button follows the latest release. GitHub's **Code → Download ZIP** contains this documentation repository, not the application. A public in-app update channel is not configured.
+
+## Local-first, with explicit connections
+
+Connections, preferences, history, and workspaces are stored on your Mac. Core terminal and SSH workflows do not require a RelayDesk cloud account. SSH identities and optional authentication providers are selected from your runtime environment; the distribution does not include the developer's configuration.
+
+Local-first does not mean every action is offline. SSH and file transfers contact the hosts you select, while shells and external tools have their own network behavior. History and transcripts can contain sensitive information.
+
+[How local data is stored](docs/privacy.md) · [First steps](docs/first-steps.md)
+
+## Security and architecture
+
+RelayDesk is a macOS desktop application built with Go and Wails, using the system WebKit view and an xterm.js terminal. SSH and file-transfer workflows use OpenSSH tools. The release bundles the application and required legal notices; application source code remains private.
+
+An ad-hoc signature checks bundle integrity but does not establish an Apple-issued developer identity. Developer ID signing and notarization are planned for a later release. Keep macOS protections enabled and review security messages before proceeding.
+
+## What comes next
+
+- **Available:** RelayDesk 2.11.0, with local terminals, SSH, SFTP/SCP, tabs, splits, host organization, and saved workspaces.
+- **Next:** real product screenshots and broader native compatibility and workflow qualification.
+- **Planned:** Developer ID signing, notarization, and broader interface localization.
+
+Follow the [release notes](https://github.com/NicoPFr/RelayDesk/releases) for shipped changes.
 
 ## Support
 
-[Search existing issues](https://github.com/NicoPFr/RelayDesk/issues) or open one of the following:
+[Search existing issues](https://github.com/NicoPFr/RelayDesk/issues), then choose the report that fits:
 
-- [Bug report](https://github.com/NicoPFr/RelayDesk/issues/new?template=bug_report.md) — what happened, your versions, and how to reproduce it.
-- [Installation problem](https://github.com/NicoPFr/RelayDesk/issues/new?template=installation_problem.md) — macOS version, processor, and the exact message you see.
-- [Feature request](https://github.com/NicoPFr/RelayDesk/issues/new?template=feature_request.md) — the workflow you want to improve and why.
-- [Question](https://github.com/NicoPFr/RelayDesk/issues/new?labels=question&title=Question%3A%20) — help understanding RelayDesk or its availability.
+[Bug report](https://github.com/NicoPFr/RelayDesk/issues/new?template=bug_report.md) · [Installation or launch problem](https://github.com/NicoPFr/RelayDesk/issues/new?template=installation_problem.md) · [Feature request](https://github.com/NicoPFr/RelayDesk/issues/new?template=feature_request.md) · [Question](https://github.com/NicoPFr/RelayDesk/issues/new?labels=question&title=Question%3A%20)
 
-English and French are welcome. Issues are public: remove credentials, private hostnames, and sensitive content from logs and screenshots.
+English and French are welcome. Include your RelayDesk version, macOS version, and reproduction steps. Issues are public: remove credentials, private hosts, paths, and operational output before sharing attachments.
 
-## Support RelayDesk
+[Browse the user documentation](docs/README.md)
 
-**RelayDesk is free to use and developed independently.**
+## Support independent development
 
-Sponsorships help support ongoing development, maintenance, bug fixes and new features. Supporting the project is optional and helps keep it sustainable over time.
+**RelayDesk is free to use and developed independently.** Sponsorships help support ongoing development, maintenance, bug fixes and new features. Supporting the project is optional.
 
-GitHub Sponsors is not active yet. A verified sponsorship link will be added here when it is available.
+GitHub Sponsors is not active yet. A verified link will be added when it becomes available.
 
-<!-- Add the verified GitHub Sponsors link and .github/FUNDING.yml only after activation. -->
+## License and third-party notices
 
-## License
+RelayDesk is **proprietary software**, free to use for personal and professional purposes under the [RelayDesk license](LICENSE). Redistribution, modification, and derivative works require permission except where the license or applicable law permits them. Application source code is not distributed in this repository.
 
-RelayDesk is **proprietary software**, free to use for personal or professional purposes under the [RelayDesk license](LICENSE). Redistribution, modification, and derivative works require permission except where the license or applicable law permits them.
-
-Bundled third-party components retain their own licenses; see [third-party notices](THIRD_PARTY_NOTICES.txt).
+Bundled components retain their own licenses. See the [third-party notices](THIRD_PARTY_NOTICES.txt).
 
 Copyright © 2026 Nicolas Peeters. All rights reserved.

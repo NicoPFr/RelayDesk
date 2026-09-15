@@ -14,7 +14,7 @@ Saved commands, transcripts, hostnames, and paths can contain sensitive informat
 
 ## Network activity
 
-SSH and SFTP connect to the hosts you select. Opening a link or an external editor can involve another application. Update checks require a configured update channel, which is not enabled for the first public candidate. These facts should not be interpreted as a guarantee about every network action made by your shell, remote command, editor, or SSH configuration.
+SSH and SFTP connect to the hosts you select. Opening a link or an external editor can involve another application. Update checks require a configured update channel, which is not enabled in 2.11.0. These facts should not be interpreted as a guarantee about every network action made by your shell, remote command, editor, or SSH configuration.
 
 ## Reporting a problem
 
