@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/brand/relaydesk-social-preview.png" alt="RelayDesk — Your terminal. Your servers. One workspace. Product branding with the RelayDesk app icon." width="100%">
-</p>
-
 # RelayDesk
 
 **A native macOS terminal and SSH client — fast, elegant, and built for a modern developer workflow.**
@@ -21,6 +17,10 @@ RelayDesk brings local shells, remote sessions, and file transfers together for 
 [Release notes & checksum](https://github.com/NicoPFr/RelayDesk/releases/latest) · [Installation](docs/installation.md) · [Get help](#support)
 
 > This release has an ad-hoc signature, **without Developer ID signing or notarization**. macOS may prevent it from opening. Read the [compatibility and security notes](docs/installation.md) before installing.
+
+<p align="center">
+  <img src="assets/brand/relaydesk-social-preview.png" alt="RelayDesk — Your terminal. Your servers. One workspace. Product branding with the RelayDesk app icon." width="100%">
+</p>
 
 ## Several systems. One place to work.
 
