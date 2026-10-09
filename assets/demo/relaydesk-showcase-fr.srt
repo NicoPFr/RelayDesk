@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:05,000
+RelayDesk — votre espace de travail SSH pour macOS
+Présentation à partir de captures natives · version publique 2.11.0
+
+2
+00:00:05,000 --> 00:00:15,000
+Terminaux SSH et fichiers SFTP dans le même espace
+Démonstration réelle sur localhost, pas un serveur de production
+
+3
+00:00:15,000 --> 00:00:25,000
+Gardez vos outils locaux et votre session SSH côte à côte
+Deux shells réels dans une même fenêtre
+
+4
+00:00:25,000 --> 00:00:35,000
+Parcourez les fichiers de la session active
+Téléchargement réel vérifié par SHA-256
+
+5
+00:00:35,000 --> 00:00:45,000
+Gratuit à utiliser · logiciel propriétaire · signature ad hoc, non notariée
+github.com/NicoPFr/RelayDesk

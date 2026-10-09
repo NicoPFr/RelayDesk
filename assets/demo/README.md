@@ -1,27 +1,36 @@
-# RelayDesk demonstration
+# RelayDesk — short product presentation
 
-A real recording has not been published. The shared macOS desktop is currently in use, so desktop recording is paused. The missing prerequisite is an idle macOS session approved for capture, or a separate Mac with RelayDesk and a non-sensitive SSH/SFTP demo environment.
+[Watch or download the 45-second presentation](relaydesk-showcase-fr.mp4)
+· [French subtitles](relaydesk-showcase-fr.srt)
+· [Native screenshot and thumbnail](../screenshots/relaydesk-overview.png)
 
-## Short recording plan
+H.264 MP4, 1920 × 1080, 24 fps, no audio. The French text is embedded and also
+available as SRT. This is a presentation assembled from native screenshots of
+the public RelayDesk 2.11.0 app, **not a live screen recording**. No autoplay,
+invented interactions, simulated terminal output or performance claims.
 
-Aim for a focused 20–40 second walkthrough:
+The underlying local and SSH shells are real; the SSH/SFTP endpoint is a
+temporary localhost server, not production infrastructure. A download through
+the application was verified against the source SHA-256. The SFTP image shows
+public macOS timezone data, without user files or credentials.
 
-1. Show the actual RelayDesk window opening with demo profiles.
-2. Open a local terminal and execute a short command.
-3. Connect to a real demo SSH host and inspect a sample file.
-4. Open its SFTP browser and transfer a sample file.
-5. End with the terminal and remote files visible together.
+## Transcript
 
-Avoid unrelated windows, credentials, private hostnames, and production sessions. Use the actual application interface, without generated frames, simulated interactions, or invented command output. Preserve enough time for viewers to read each step.
+| Time | French on-screen text |
+| --- | --- |
+| 00:00–00:05 | RelayDesk — votre espace de travail SSH pour macOS. Présentation à partir de captures natives · version publique 2.11.0. |
+| 00:05–00:15 | Terminaux SSH et fichiers SFTP dans le même espace. Démonstration réelle sur localhost, pas un serveur de production. |
+| 00:15–00:25 | Gardez vos outils locaux et votre session SSH côte à côte. Deux shells réels dans une même fenêtre. |
+| 00:25–00:35 | Parcourez les fichiers de la session active. Téléchargement réel vérifié par SHA-256. |
+| 00:35–00:45 | Gratuit à utiliser · logiciel propriétaire · signature ad hoc, non notariée. github.com/NicoPFr/RelayDesk. |
 
-## Publication
+## Try it
 
-Save the reviewed recording here as `relaydesk-workflow.mp4`, encoded as H.264. Prepare a small GIF excerpt as `relaydesk-workflow.gif` for inline GitHub README playback, and a text transcript describing the actions. Keep the still overview available for readers who prefer not to view animation.
+[Project and download](https://github.com/NicoPFr/RelayDesk)
+· [Installation](../../docs/installation.md)
+· [First steps](../../docs/first-steps.md)
 
-Only after the files exist and have been reviewed, replace the README's media preparation notice with the GIF, a link to the full video, and the transcript. Verify playback and readability on GitHub. No placeholder video or broken media link should be published.
-
-## Social preview
-
-The repository's custom social preview is configured on GitHub using [the dedicated image](../brand/relaydesk-social-preview.png). It uses the actual RelayDesk icon and product typography at 1280 × 640 pixels; it does not depict a simulated application interface.
-
-A later revision may include an approved application screenshot. Adding an image to Git alone does not configure GitHub's preview; any replacement must also be uploaded in **Settings → General → Social preview** and checked on the repository.
+RelayDesk is proprietary and free to use. The current DMG is ad-hoc signed,
+without Developer ID signing or notarization; macOS policies may block launch.
+The interface is primarily French. This video does not announce a new app
+release or promise compatibility with every remote environment.

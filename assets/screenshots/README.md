@@ -1,26 +1,22 @@
-# Product screenshots to provide
+# RelayDesk application screenshots
 
-No usable application screenshots were found in either repository or their available Git history. Existing images are branding assets only. Do not use browser test fixtures or mockups as product screenshots.
+These images were captured from the unmodified public RelayDesk 2.11.0 macOS
+application on Apple Silicon, using an isolated demonstration profile.
+They are native window captures, not browser fixtures, mockups or AI-generated UI.
+Original PNG dimensions are 2984 × 1670. No upscaling or retouching was applied.
 
-## Three priority captures from the Mac
+| Image | Workflow |
+| --- | --- |
+| [Overview](relaydesk-overview.png) | One loopback SSH connection, a local terminal tab and the SFTP pane in the same window. |
+| [Local and SSH split](relaydesk-split-local-ssh.png) | Two actual shells side by side: macOS local shell and SSH to a temporary localhost endpoint. |
+| [SFTP](relaydesk-sftp.png) | Public macOS timezone files browsed through the SSH session's SFTP connection. A download through the app was verified against the source SHA-256. |
 
-| File | What to show | Proposed README caption |
-| --- | --- | --- |
-| `relaydesk-overview.png` | The full RelayDesk window, connection sidebar, several tabs, and a named workspace. Use sample host profiles only. | Your connections, sessions, and workspace in one macOS window. |
-| `relaydesk-split-view.png` | Two or three actual terminals side by side: one local shell and real SSH sessions to a demo environment. Keep tabs and workspace controls visible. | Keep local tools and remote sessions side by side. |
-| `relaydesk-sftp.png` | A connected demo SSH terminal beside the real SFTP browser, with harmless sample files and a completed sample transfer. | Work with remote files without leaving the active session. |
+The endpoint is localhost, not a production system. The visible `demo` prompts
+are deliberately configured shell prompts; they are not account or privilege
+claims. Terminal results come from real commands. The sample timezone files
+are public operating-system data; no private host, configuration or operational
+output is included. The pictures do not prove compatibility with every remote
+server, an execution-speed benchmark or support for future features.
 
-Optional fourth image: a real tmux layout, saved-workspace selector, or terminal-trigger editor if it adds something clearly visible and representative. Do not create a screenshot simply to complete a feature list.
-
-## Capture quality
-
-- Use the real 2.11.0 application on your Mac. Capture the application window at its native Retina resolution, ideally at least 2000 pixels wide; do not upscale.
-- Keep the same appearance, window proportions, and readable terminal font across images.
-- Use demonstration hosts and sample files only. Real SSH/SFTP operations must run against a demo environment; never stage fake output.
-- Avoid menus or tooltips covering the workspace, unrelated windows, notifications, and the desktop.
-- Check the sidebar, tab titles, prompt, paths, history, terminal output, and transfer list for personal or work data. Do not include passwords, keys, tokens, production hosts, or private usernames.
-- Supply the three original PNGs with a short description of the workflow and confirmation that they show demonstration data. They can then be reviewed and embedded without inventing any content.
-
-## Integration
-
-Use the overview below the README hero, followed by split-view and SFTP captures beside their corresponding workflow sections. The current screenshot notice must be removed only when the real files exist. Use meaningful alt text and the captions above. A social-preview revision can incorporate the approved overview later.
+The locomotive and social-preview images in `assets/brand` are branding, not
+application screenshots. Refer to the release notes for package limitations.
