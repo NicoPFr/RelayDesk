@@ -2,7 +2,7 @@
 
 [← RelayDesk](../README.md)
 
-RelayDesk combines local terminals, SSH sessions, and remote files in a macOS workspace. [RelayDesk 2.11.0 is available](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.0) for macOS.
+RelayDesk combines local terminals, SSH sessions, and remote files in a macOS workspace. [RelayDesk 2.11.1-rc.14](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.1-rc.14) is the current experimental prerelease for macOS; [2.11.0](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.0) remains the earlier stable release.
 
 | Guide | What you will find |
 | --- | --- |

@@ -2,7 +2,9 @@
 
 [← Documentation](README.md)
 
-These workflows describe RelayDesk 2.11.0. Start with the [installation guide](installation.md).
+These core workflows apply to RelayDesk 2.11.0 and the experimental 2.11.1-rc.14.
+Existing screenshots show 2.11.0, not the new candidate. Start with the
+[installation guide](installation.md) and read the [prerelease limitations](releases/2.11.1-rc.14.md).
 Interface labels below match the current French interface.
 
 ## Open a local terminal
