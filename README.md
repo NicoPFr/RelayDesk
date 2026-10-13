@@ -8,12 +8,17 @@ your Mac's SSH configuration rather than requiring a RelayDesk cloud account.
 
 **Free to use · Proprietary software · Apple Silicon + Intel**
 
-### [Download RelayDesk for macOS](https://github.com/NicoPFr/RelayDesk/releases/latest/download/RelayDesk.dmg)
+### [Try RelayDesk 2.11.1-rc.14 for macOS](https://github.com/NicoPFr/RelayDesk/releases/download/v2.11.1-rc.14/RelayDesk-2.11.1-rc.14.dmg)
 
-**Current public release: 2.11.0** · Universal DMG · Targets macOS 12+
+**Current public prerelease: 2.11.1-rc.14** · Experimental · Universal DMG · Targets macOS 12+
+
+Includes updated dependencies and terminal input fixes. This is not a stable
+release. [Read its verification scope and limitations](docs/releases/2.11.1-rc.14.md)
+before installing. The earlier stable 2.11.0 remains available in
+[release history](docs/releases.md); it does not include these updates.
 
 [Installation](docs/installation.md) · [First steps](docs/first-steps.md) ·
-[Release notes and checksum](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.0)
+[Release notes and checksum](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.1-rc.14)
 
 > The current release is ad-hoc signed, **without Developer ID signing or
 > notarization**. macOS or device-management policies may block launch. The

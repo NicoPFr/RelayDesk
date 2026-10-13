@@ -2,6 +2,16 @@
 
 [← Documentation](README.md)
 
+## RelayDesk 2.11.1-rc.14 — experimental prerelease
+
+[Release notes and versioned download](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.1-rc.14)
+· [Changes, checks and limitations](releases/2.11.1-rc.14.md)
+
+Updated dependencies and terminal input protections. Universal, ad-hoc signed,
+not Developer ID signed or notarized. This prerelease does not replace the
+stable channel. Its asset is named `RelayDesk-2.11.1-rc.14.dmg` to make the
+experimental version explicit. Earlier packages and checksums are unchanged.
+
 ## RelayDesk 2.11.0
 
 [Release notes and download](https://github.com/NicoPFr/RelayDesk/releases/tag/v2.11.0)
@@ -24,6 +34,6 @@ SHA-256:
 
 [Latest release](https://github.com/NicoPFr/RelayDesk/releases/latest) · [Download latest DMG](https://github.com/NicoPFr/RelayDesk/releases/latest/download/RelayDesk.dmg) · [All releases](https://github.com/NicoPFr/RelayDesk/releases)
 
-Every release uses the stable asset name `RelayDesk.dmg`, while its version is recorded in the tag, release notes, and application metadata. This keeps the README's main download link unchanged between releases. Links under a specific tag continue to identify that version. Never silently replace a published artifact; publish a new version when its contents change.
+Stable releases use the asset name `RelayDesk.dmg`, while their version is recorded in the tag, release notes, and application metadata. Prereleases may use an explicitly versioned filename; use the release-specific link above. The `latest` links continue to resolve to stable 2.11.0, not this experimental candidate. Never silently replace a published artifact; publish a new version when its contents change.
 
 Future release notes will describe actual changes, compatibility coverage, signing status, installation details, and the checksum of the published DMG. See [GitHub's release-link documentation](https://docs.github.com/en/repositories/releasing-projects-on-github/linking-to-releases).
